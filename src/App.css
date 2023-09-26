@@ -1,0 +1,58 @@
+body {
+    margin: 2rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.App {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1;
+}
+
+
+
+    /*Animação de entrada sutil a esquerda da pág.*/
+.animeLeft {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        transform: initial;
+        opacity: initial;
+    }
+} 
+
+ /* Animação de carregamento*/
+.loading {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 10px solid #ccc ;
+    border-right-color:transparent;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    to{
+        transform: rotate(360deg);
+    }
+}
